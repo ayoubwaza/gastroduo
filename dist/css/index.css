@@ -1,0 +1,999 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "El Messiri", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+#submitButton:focus {
+  box-shadow: inset 0 5px 5px 0 rgb(0, 0, 0) !important;
+}
+a {
+  text-decoration: none !important;
+  color: none !important;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #305067;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 40%;
+  right: 5%;
+  top: 0%;
+  background: url("../../Images/herobg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .hero_child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hero .hero_child .productWithcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.hero .hero_child .productWithcontent img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.hero .hero_child .productWithcontent p {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0;
+}
+
+.hero .hero_child .productWithcontent h2 {
+  font-weight: bold;
+  font-size: 3em;
+  color: #5bbdab;
+  margin: 0;
+  text-align: center;
+}
+
+.hero .hero_child .productWithcontent .hero_btn_order {
+  margin: 10px 0 0 0;
+}
+
+.hero .hero_child .productWithcontent .hero_btn_order button {
+  width: 300px;
+  -webkit-box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 5em 0 #fff,
+    inset 2em 0 0 0 #5bbdab;
+  box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 5em 0 #fff,
+    inset 2em 0 0 0 #5bbdab;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-weight: bold;
+  color: #305067;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.hero .stars {
+  margin-top: 20px;
+  font-size: 3em;
+}
+
+.advantages {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  padding: 20px 0 20px 0;
+  color: #000;
+}
+
+.advantages h1 {
+  font-weight: bold;
+  font-size: 4em;
+  font-family: "Amiri", sans-serif !important;
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 20%;
+}
+
+.advantages .advantages_child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.advantages .advantages_child .advantages_child_each {
+  background: rgba(255, 255, 255, 0.22);
+  background-clip: blur(50%);
+  width: 350px;
+  height: 450px;
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 3px 20px 3px;
+  border-radius: 20px;
+}
+
+.advantages .advantages_child .advantages_child_each h2 {
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 20%;
+  color: #305067;
+}
+
+.advantages .advantages_child .advantages_child_each p {
+  line-height: 2;
+  font-weight: bold;
+}
+
+.advantages .advantages_child .advantages_child_each img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 100%;
+}
+
+.product_info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #305067;
+  color: #fff;
+  min-width: 100%;
+  padding: 20px 0 20px 0;
+}
+
+.product_info h1 {
+  font-weight: bold;
+  font-size: 4em;
+  font-family: "Amiri", sans-serif !important;
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 20%;
+}
+
+.product_info ._child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.product_info ._child ._image img {
+  width: 400px !important;
+  max-width: 500px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.product_info ._child .content p {
+  font-weight: bold;
+  line-height: 2;
+}
+
+.product_info ._child .content ul li {
+  font-size: 1.5em;
+  font-weight: bold;
+  list-style: none;
+}
+
+.product_info ._child .content ul li::before {
+  content: "\2030";
+  position: absolute;
+  margin-right: -1.5em;
+  color: #5bbdab;
+  display: inline-block;
+}
+
+.product_info button {
+  width: 300px;
+  -webkit-box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 5em 0 #fff,
+    inset 2em 0 0 0 #5bbdab;
+  box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 5em 0 #fff,
+    inset 2em 0 0 0 #5bbdab;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-weight: bold;
+  color: #305067;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.prod_does {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+  position: relative;
+}
+
+.prod_does h1 {
+  font-weight: bold;
+  font-size: 4em;
+  font-family: "Amiri", sans-serif !important;
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 20%;
+  z-index: 99;
+  color: #000 !important;
+  margin: 0 !important;
+  margin-bottom: 20px !important;
+}
+
+.prod_does ._child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.prod_does ._child .doc_mic {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.prod_does ._child .doc_mic .mic,
+.prod_does ._child .doc_mic .doc {
+  position: absolute;
+}
+
+.prod_does ._child .prod2,
+.prod_does ._child .prod1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.prod_does ._child .prod2 img,
+.prod_does ._child .prod1 img {
+  width: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.prod_does ._child .prod2 ul,
+.prod_does ._child .prod1 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.prod_does ._child .prod2 ul li,
+.prod_does ._child .prod1 ul li {
+  color: #305067;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.prod_does ._child .prod2 ul li::before,
+.prod_does ._child .prod1 ul li::before {
+  content: "\2055";
+  margin-right: -0.9em;
+  font-size: 1.5em;
+  color: #5bbdab;
+}
+
+.whyDetox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #000;
+  position: relative;
+  padding: 20px 0 20px 0;
+}
+
+.whyDetox h1 {
+  font-weight: bold;
+  font-size: 4em;
+  font-family: "Amiri", sans-serif !important;
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 20%;
+}
+
+.whyDetox .whyDetox_Child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.whyDetox .whyDetox_Child img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 500px;
+}
+
+.whyDetox .whyDetox_Child p {
+  font-weight: bold;
+  line-height: 2;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.whyDetox .whyDetox_Child p span {
+  background: #5bbdab;
+  color: yellow;
+  padding: 5px;
+}
+
+.whyDetox button {
+  width: 300px;
+  -webkit-box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 5em 0 #000,
+    inset 2em 0 0 0 #5bbdab;
+  box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 5em 0 #000,
+    inset 2em 0 0 0 #5bbdab;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-weight: bold;
+  color: #305067;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.reviews {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  background: #305067;
+  padding: 20px 0 20px 0;
+  color: #fff;
+}
+
+.reviews h1 {
+  font-weight: bold;
+  font-size: 4em;
+  font-family: "Amiri", sans-serif !important;
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 20%;
+}
+
+.reviews .reviews_child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.reviews .reviews_child .reviews_child_each {
+  background: rgba(255, 255, 255, 0.22);
+  background-clip: blur(80%);
+  width: 350px;
+  height: 450px;
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 7px 20px 7px !important;
+  border-radius: 20px;
+}
+
+.reviews .reviews_child .reviews_child_each h2 {
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 20%;
+}
+
+.reviews .reviews_child .reviews_child_each p {
+  line-height: 2;
+  font-weight: bold;
+}
+
+.reviews .reviews_child .reviews_child_each img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 100%;
+}
+
+.reviews .reviews_child .reviews_child_each .stars {
+  margin-top: 10px;
+}
+
+.serv {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 0 20px 0;
+  color: #000;
+}
+
+.serv .serv_child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.serv .serv_child .serv_child_each {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.serv .serv_child .serv_child_each img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 350px;
+  -webkit-filter: drop-shadow(0 5px 0 #000);
+  filter: drop-shadow(0 5px 0 #000);
+}
+
+.forum {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 0 20px 0;
+  background: #305067;
+  color: #fff;
+}
+
+.forum h1 {
+  font-weight: bold;
+  font-size: 4em;
+  font-family: "Amiri", sans-serif !important;
+  border-bottom: 5px solid #5bbdab;
+  border-radius: 20%;
+}
+
+.forum .forum_child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.forum .forum_child form div {
+  margin-bottom: 20px;
+}
+
+.forum .forum_child form div input {
+  padding: 7px;
+  width: 300px;
+  font-weight: bold;
+  border: 2px solid #5bbdab;
+  border-radius: 20px;
+  outline: none;
+  padding-right: 30px;
+}
+
+.forum .forum_child form .forum_btn_order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.forum .forum_child form .forum_btn_order button {
+  width: 250px;
+  -webkit-box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 2em 0 #000,
+    inset 2em 0 0 0 #5bbdab;
+  box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 2em 0 #000,
+    inset 2em 0 0 0 #5bbdab;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-weight: bold;
+  color: #305067;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.forum .forum_child form .forum_btn_order button:focus {
+  -webkit-box-shadow: inset 0 5px 5px 0 black;
+  box-shadow: inset 0 5px 5px 0 black;
+}
+
+.forum .forum_child form .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.forum .forum_child form .prices h3 {
+  margin: 0;
+}
+
+.forum .forum_child form .prices h3:nth-child(1) {
+  color: #5bbdab;
+  font-weight: bold;
+  -webkit-animation: NewPrice 1s ease-out infinite;
+  animation: NewPrice 1s ease-out infinite;
+}
+
+@-webkit-keyframes NewPrice {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes NewPrice {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.forum .forum_child form .prices h3:nth-child(2) {
+  color: red;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+footer p {
+  width: 350px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media only screen and (max-width: 950px) {
+  .hero {
+    height: 100%;
+  }
+  .hero::before {
+    content: "";
+    background: url("");
+  }
+  .hero_child {
+    width: 100%;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .hero_child img {
+    width: 100%;
+  }
+  .product_info h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0 !important;
+  }
+  .product_info p {
+    text-align: center;
+  }
+  .product_info ._child {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .product_info ._child ._image img {
+    width: 300px !important;
+  }
+  .product_info ._child .content ul {
+    margin-right: 5%;
+  }
+  .advantages,
+  .whyDetox {
+    text-align: center !important;
+  }
+  .whyDetox_Child {
+    width: 100% !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .whyDetox_Child img {
+    width: 350px !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .whyDetox_Child p {
+    font-style: italic;
+    font-size: 1.2em !important;
+    font-weight: bold;
+    width: 100%;
+  }
+  .advantages h1 {
+    width: 100%;
+  }
+  .prod_does h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .prod_does ._child {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .prod_does ._child .doc_mic {
+    display: none;
+  }
+  .prod_does ._child .prod2,
+  .prod_does ._child .prod1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .prod_does ._child .prod2 img,
+  .prod_does ._child .prod1 img {
+    width: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .advantages_child,
+  .reviews_child,
+  .serv_child,
+  .forum_child {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .advantages_child img,
+  .reviews_child img,
+  .serv_child img,
+  .forum_child img {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .serv img {
+    width: 200px !important;
+    height: 200px !important;
+    max-width: 200px !important;
+    min-width: 200px;
+  }
+  .serv .serv_child_each h3 {
+    margin: 0 !important;
+  }
+  .reviews {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  .reviews .reviews_child_each {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+    height: 100% !important;
+  }
+  .reviews .reviews_child_each .stars {
+    margin-top: 0px !important;
+  }
+  .forum_child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .forum_child img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hero .hero_child .productWithcontent p {
+    width: 100%;
+    max-width: 320px !important;
+  }
+  .hero .stars {
+    font-size: 2.8em;
+  }
+  p {
+    width: 100% !important;
+  }
+  footer p {
+    width: 320px !important;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+  }
+  .reviews_child_each {
+    width: 320px !important;
+  }
+  .whyDetox_Child img {
+    width: 100% !important;
+  }
+  .advantages_child_each {
+    width: 320px !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */

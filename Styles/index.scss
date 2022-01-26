@@ -1,0 +1,686 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "El Messiri", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+a {
+  text-decoration: none !important;
+  color: none !important;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #305067;
+  color: #fff;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100vh;
+    width: 40%;
+    right: 5%;
+    top: 0%;
+    background: url("../../Images/herobg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .hero_child {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .productWithcontent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        object-fit: cover;
+      }
+      p {
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0;
+      }
+      h2 {
+        font-weight: bold;
+        font-size: 3em;
+        color: #5bbdab;
+        margin: 0;
+        text-align: center;
+      }
+      .hero_btn_order {
+        margin: 10px 0 0 0;
+        button {
+          width: 300px;
+          box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 5em 0 #fff,
+            inset 2em 0 0 0 #5bbdab;
+          border-radius: 50px;
+          border: none;
+          outline: none;
+          padding: 7px;
+          font-weight: bold;
+          color: #305067;
+          font-size: 1.2em;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .stars {
+    margin-top: 20px;
+    font-size: 3em;
+  }
+}
+.advantages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  padding: 20px 0 20px 0;
+  color: #000;
+  h1 {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: "Amiri", sans-serif !important;
+    border-bottom: 5px solid #5bbdab;
+    border-radius: 20%;
+  }
+  .advantages_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .advantages_child_each {
+      background: rgba(255, 255, 255, 0.22);
+      background-clip: blur(50%);
+      width: 350px;
+      height: 450px;
+      max-width: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 3px 20px 3px;
+      border-radius: 20px;
+      h2 {
+        border-bottom: 5px solid #5bbdab;
+        border-radius: 20%;
+        color: #305067;
+      }
+      p {
+        line-height: 2;
+        font-weight: bold;
+      }
+      img {
+        object-fit: cover;
+        width: 200px;
+        max-width: 200px;
+        min-width: 200px;
+        height: 200px;
+        max-height: 200px;
+        min-height: 200px;
+        border-bottom: 5px solid #5bbdab;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+.product_info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #305067;
+  color: #fff;
+  min-width: 100%;
+  padding: 20px 0 20px 0;
+  h1 {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: "Amiri", sans-serif !important;
+    border-bottom: 5px solid #5bbdab;
+    border-radius: 20%;
+  }
+  ._child {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    ._image {
+      img {
+        width: 400px !important;
+        max-width: 500px;
+        object-fit: cover;
+      }
+    }
+    .content {
+      p {
+        font-weight: bold;
+        line-height: 2;
+      }
+      ul {
+        li {
+          font-size: 1.5em;
+          font-weight: bold;
+          list-style: none;
+          &::before {
+            content: "\2030";
+            position: absolute;
+            margin-right: -1.5em;
+            color: #5bbdab;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  button {
+    width: 300px;
+    box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 5em 0 #fff,
+      inset 2em 0 0 0 #5bbdab;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-weight: bold;
+    color: #305067;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+}
+.prod_does {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+  position: relative;
+  h1 {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: "Amiri", sans-serif !important;
+    border-bottom: 5px solid #5bbdab;
+    border-radius: 20%;
+    z-index: 99;
+    color: #000 !important;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  ._child {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .doc_mic {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .mic,
+      .doc {
+        position: absolute;
+      }
+    }
+    .prod2,
+    .prod1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        width: 300px;
+        object-fit: cover;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          color: #305067;
+          list-style: none;
+          font-weight: bold;
+          font-size: 1em;
+          &::before {
+            content: "\2055";
+            margin-right: -0.9em;
+            font-size: 1.5em;
+            color: #5bbdab;
+          }
+        }
+      }
+    }
+  }
+}
+.whyDetox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+  position: relative;
+  padding: 20px 0 20px 0;
+  h1 {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: "Amiri", sans-serif !important;
+    border-bottom: 5px solid #5bbdab;
+    border-radius: 20%;
+  }
+  .whyDetox_Child {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      object-fit: cover;
+      width: 500px;
+    }
+    p {
+      font-weight: bold;
+      line-height: 2;
+      font-size: 1.4em;
+      text-align: center;
+      span {
+        background: #5bbdab;
+        color: yellow;
+        padding: 5px;
+      }
+    }
+  }
+  button {
+    width: 300px;
+    box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 5em 0 #000,
+      inset 2em 0 0 0 #5bbdab;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-weight: bold;
+    color: #305067;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+}
+.reviews {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background: #305067;
+  padding: 20px 0 20px 0;
+  color: #fff;
+  h1 {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: "Amiri", sans-serif !important;
+    border-bottom: 5px solid #5bbdab;
+    border-radius: 20%;
+  }
+  .reviews_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .reviews_child_each {
+      background: rgba(255, 255, 255, 0.22);
+      background-clip: blur(80%);
+      width: 350px;
+      height: 450px;
+      max-width: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 7px 20px 7px !important;
+      border-radius: 20px;
+      h2 {
+        border-bottom: 5px solid #5bbdab;
+        border-radius: 20%;
+      }
+      p {
+        line-height: 2;
+        font-weight: bold;
+      }
+      img {
+        object-fit: cover;
+        width: 200px;
+        max-width: 200px;
+        min-width: 200px;
+        height: 200px;
+        max-height: 200px;
+        min-height: 200px;
+        border-bottom: 5px solid #5bbdab;
+        border-radius: 100%;
+      }
+      .stars {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.serv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 0 20px 0;
+  color: #000;
+  .serv_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .serv_child_each {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      img {
+        object-fit: cover;
+        width: 350px;
+        filter: drop-shadow(0 5px 0 #000);
+      }
+    }
+  }
+}
+.forum {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 0 20px 0;
+  background: #305067;
+  color: #fff;
+  h1 {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: "Amiri", sans-serif !important;
+    border-bottom: 5px solid #5bbdab;
+    border-radius: 20%;
+  }
+  .forum_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    form {
+      div {
+        margin-bottom: 20px;
+        input {
+          padding: 7px;
+          width: 300px;
+          font-weight: bold;
+          border: 2px solid #5bbdab;
+          border-radius: 20px;
+          outline: none;
+          padding-right: 30px;
+        }
+      }
+      .forum_btn_order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          width: 250px;
+          box-shadow: inset -2em 0 0 0em #5bbdab, 0 5px 2em 0 #000,
+            inset 2em 0 0 0 #5bbdab;
+          border-radius: 50px;
+          border: none;
+          outline: none;
+          padding: 7px;
+          font-weight: bold;
+          color: #305067;
+          font-size: 1.2em;
+          cursor: pointer;
+          &:focus {
+            box-shadow: inset 0 5px 5px 0 rgb(0, 0, 0);
+          }
+        }
+      }
+      .prices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+          margin: 0;
+        }
+        h3:nth-child(1) {
+          color: #5bbdab;
+          font-weight: bold;
+          animation: NewPrice 1s ease-out infinite;
+          @keyframes NewPrice {
+            from {
+              transform: scale(1);
+            }
+            to {
+              transform: scale(1.1);
+            }
+          }
+        }
+        h3:nth-child(2) {
+          color: red;
+          font-weight: bold;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    width: 350px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .hero {
+    height: 100%;
+    &::before {
+      content: "";
+      background: url("");
+    }
+  }
+  .hero_child {
+    width: 100%;
+    justify-content: center !important;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+  .product_info {
+    h1 {
+      text-align: center;
+      margin: 0;
+      padding: 0 !important;
+    }
+    p {
+      text-align: center;
+    }
+    ._child {
+      width: 100%;
+      flex-direction: column;
+      ._image {
+        img {
+          width: 300px !important;
+        }
+      }
+      .content {
+        ul {
+          margin-right: 5%;
+        }
+      }
+    }
+  }
+  .advantages,
+  .whyDetox {
+    text-align: center !important;
+  }
+  .whyDetox_Child {
+    width: 100% !important;
+    flex-direction: column;
+    img {
+      width: 350px !important;
+      object-fit: cover;
+    }
+    p {
+      font-style: italic;
+      font-size: 1.2em !important;
+      font-weight: bold;
+      width: 100%;
+    }
+  }
+  .advantages {
+    h1 {
+      width: 100%;
+    }
+  }
+  .prod_does {
+    h1 {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    ._child {
+      width: 100%;
+      flex-direction: column;
+      .doc_mic {
+        display: none;
+      }
+      .prod2,
+      .prod1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+          width: 300px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .advantages_child,
+  .reviews_child,
+  .serv_child,
+  .forum_child {
+    width: 100%;
+    flex-direction: column;
+    img {
+      object-fit: cover;
+    }
+  }
+  .serv {
+    img {
+      width: 200px !important;
+      height: 200px !important;
+      max-width: 200px !important;
+      min-width: 200px;
+    }
+    .serv_child_each {
+      h3 {
+        margin: 0 !important;
+      }
+    }
+  }
+  .reviews {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    .reviews_child_each {
+      flex-direction: column-reverse;
+      margin-bottom: 20px;
+      height: 100% !important;
+      .stars {
+        margin-top: 0px !important;
+      }
+    }
+  }
+  .forum_child {
+    flex-direction: column-reverse;
+    img {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .hero {
+    .hero_child {
+      .productWithcontent {
+        p {
+          width: 100%;
+          max-width: 320px !important;
+        }
+      }
+    }
+    .stars {
+      font-size: 2.8em;
+    }
+  }
+  p {
+    width: 100% !important;
+  }
+  footer {
+    p {
+      width: 320px !important;
+      text-align: center;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+  .reviews_child_each {
+    width: 320px !important;
+  }
+  .whyDetox_Child {
+    img {
+      width: 100% !important;
+    }
+  }
+  .advantages_child_each {
+    width: 320px !important;
+  }
+}

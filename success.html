@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/thanks.css" />
+    <link rel="shortcut icon" href="/Images/akcharLogo.png" type="image/x-icon" />
+    <title>Gastro Duo</title>
+</head>
+
+<body>
+    <div class="parent">
+        <h1 style="color:#45B5A0 ">Gastro Duo</h1>
+        <p>نشكركم على طلبكم و ثقتكم</p>
+        <p>لقد استلمنا طلبكم سنتصل بكم قريبا لتأكيد طلبكم</p>
+        <div>
+            <img src="/Images/Confirmed.gif" width="100%" height="100%" alt="" />
+        </div>
+        <div>
+            <button id="btn_back">الرجوع</button>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("btn_back").addEventListener("click", () => {
+        window.history.back();
+    });
+</script>
+</html>
